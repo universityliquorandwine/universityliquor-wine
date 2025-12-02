@@ -1,0 +1,1052 @@
+/* ============================================
+   SPIRITS COLLECTION PAGE - PREMIUM STYLES
+   ============================================ */
+
+/* ============================================
+   SPIRITS HERO SECTION
+   ============================================ */
+.spirits-hero {
+  position: relative;
+  height: 90vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spirits-hero .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=1920&q=90');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.spirits-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(10, 22, 40, 0.7) 0%, rgba(10, 22, 40, 0.5) 50%, rgba(10, 22, 40, 0.8) 100%);
+  z-index: 2;
+}
+
+.spirits-hero .hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.decorative-line {
+  width: 80px;
+  height: 2px;
+  background: var(--primary-gold);
+  margin: 0 auto 30px;
+}
+
+.section-decoration {
+  width: 80px;
+  height: 2px;
+  background: var(--gradient-gold);
+  margin: 0 auto 30px;
+}
+
+.spirits-hero .hero-title {
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.spirits-hero .hero-subtitle {
+  font-size: 20px;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.spirits-hero .hero-location {
+  font-size: 16px;
+  color: var(--primary-gold);
+  margin-bottom: 40px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.location-icon {
+  font-size: 18px;
+}
+
+.spirits-hero .hero-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   SPIRITS CATEGORIES SECTION
+   ============================================ */
+.spirits-categories {
+  background: var(--cream);
+  padding: 100px 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.category-card {
+  background: #0A1628; /* Dark navy background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--primary-gold); /* Add gold border on hover */
+}
+
+.category-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.1);
+}
+
+.category-content {
+  padding: 30px;
+  background: #0A1628; /* Navy background for content area */
+}
+
+.category-content h3 {
+  color: white; /* White text */
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-family: var(--font-display);
+}
+
+.category-description {
+  color: rgba(255, 255, 255, 0.85); /* White with slight transparency */
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.category-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05); /* Subtle white overlay on navy */
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.2); /* Subtle gold border */
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--primary-gold); /* Gold for labels */
+}
+
+.detail-value {
+  color: rgba(255, 255, 255, 0.9); /* White text */
+  text-align: right;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 6px 14px;
+  background: rgba(128, 0, 32, 0.3); /* Burgundy with transparency */
+  color: white; /* White text */
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid var(--primary-burgundy);
+}
+
+/* ============================================
+   TENNESSEE WHISKEY SECTION
+   ============================================ */
+.tennessee-whiskey {
+  padding: 100px 0;
+  background: white;
+}
+
+.tennessee-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.tennessee-text h3 {
+  color: var(--primary-navy);
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+}
+
+.tennessee-text h4 {
+  color: var(--primary-burgundy);
+  font-size: 20px;
+  margin: 30px 0 15px;
+  font-family: var(--font-accent);
+  font-weight: 600;
+}
+
+.tennessee-text p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--text-medium);
+}
+
+.tennessee-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.tennessee-text li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.7;
+  color: var(--text-medium);
+}
+
+.tennessee-text li:before {
+  content: "🥃";
+  position: absolute;
+  left: 0;
+}
+
+.distillery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0 30px;
+}
+
+.distillery-item {
+  padding: 20px;
+  background: var(--cream);
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-gold);
+}
+
+.distillery-item strong {
+  color: var(--primary-navy);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: var(--font-display);
+}
+
+.distillery-item p {
+  font-size: 14px;
+  color: var(--text-medium);
+  margin: 0;
+}
+
+.tennessee-image {
+  position: relative;
+}
+
+.tennessee-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+.tennessee-cta {
+  margin-top: 30px;
+}
+
+.tennessee-cta .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tennessee-cta .phone-icon {
+  font-size: 18px;
+}
+
+/* ============================================
+   CLASSIC COCKTAILS SECTION
+   ============================================ */
+.cocktails-section {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.cocktails-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+  gap: 35px;
+  margin-top: 60px;
+}
+
+.cocktail-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.cocktail-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cocktail-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.cocktail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cocktail-card:hover .cocktail-image img {
+  transform: scale(1.1);
+}
+
+.cocktail-content {
+  padding: 25px;
+}
+
+.cocktail-content h4 {
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-family: var(--font-display);
+}
+
+.cocktail-spirit {
+  color: var(--primary-gold);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cocktail-ingredients h5 {
+  color: var(--primary-burgundy);
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-accent);
+}
+
+.cocktail-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.cocktail-ingredients li {
+  padding: 5px 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: 14px;
+  color: var(--text-medium);
+}
+
+.cocktail-ingredients li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-gold);
+  font-weight: bold;
+}
+
+.cocktail-method {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-medium);
+  margin-bottom: 15px;
+}
+
+.difficulty-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(128, 0, 32, 0.1);
+  color: var(--primary-burgundy);
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid var(--primary-burgundy);
+}
+
+/* ============================================
+   DUAL CTA SECTION - Side by Side
+   ============================================ */
+.dual-cta-section {
+  padding: 80px 0;
+  background: var(--cream);
+}
+
+.dual-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-column {
+  text-align: center;
+  padding: 50px 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.cta-column:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-text {
+  font-size: 24px;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.cta-column .btn-primary {
+  padding: 16px 40px;
+  background: var(--gradient-gold);
+  color: var(--primary-navy);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cta-column .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* ============================================
+   SPIRITS EDUCATION SECTION
+   ============================================ */
+.spirits-education {
+  background: white;
+  padding: 100px 0;
+}
+
+.education-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border: 2px solid var(--light-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  border-color: var(--primary-gold);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 25px 30px;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.accordion-header:hover {
+  background: var(--off-white);
+}
+
+.accordion-header.active {
+  background: var(--cream);
+}
+
+.accordion-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.accordion-header h4 {
+  flex: 1;
+  margin: 0;
+  font-size: 20px;
+  color: var(--primary-navy);
+  font-family: var(--font-display);
+}
+
+.accordion-toggle {
+  font-size: 28px;
+  color: var(--primary-gold);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-toggle {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 30px;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  padding: 0 30px 30px;
+}
+
+.accordion-content h5 {
+  font-size: 16px;
+  color: var(--primary-burgundy);
+  margin: 20px 0 12px;
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.accordion-content ul, .accordion-content ol {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.accordion-content li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: var(--text-medium);
+}
+
+.accordion-content p {
+  margin-bottom: 15px;
+  color: var(--text-medium);
+}
+
+/* ============================================
+   WHY SPIRITS SECTION
+   ============================================ */
+.why-spirits {
+  background: var(--primary-navy);
+  color: white;
+  padding: 100px 0;
+}
+
+.why-spirits .section-title {
+  color: white;
+}
+
+.why-spirits .section-subtitle {
+  color: rgba(255,255,255,0.9);
+}
+
+.why-spirits .section-decoration {
+  background: var(--primary-gold);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--primary-gold);
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.benefit-card h4 {
+  color: var(--primary-gold);
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: var(--font-display);
+}
+
+.benefit-card p {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+.spirits-faq {
+  background: var(--cream);
+  padding: 100px 0;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 25px 30px;
+  background: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.faq-question:hover {
+  background: var(--off-white);
+}
+
+.faq-question.active {
+  background: var(--cream);
+}
+
+.faq-question h4 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--primary-navy);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.faq-icon {
+  font-size: 24px;
+  color: var(--primary-gold);
+  transition: transform 0.3s ease;
+  font-weight: 300;
+}
+
+.faq-question.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 30px;
+}
+
+.faq-answer.active {
+  max-height: 800px;
+  padding: 0 30px 25px;
+}
+
+.faq-answer p {
+  margin-bottom: 15px;
+  color: var(--text-medium);
+}
+
+.faq-answer ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.faq-answer li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: var(--text-medium);
+}
+
+.faq-answer strong {
+  color: var(--primary-burgundy);
+}
+
+.faq-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 2px solid var(--light-gray);
+}
+
+.faq-cta p {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* ============================================
+   SEO CONTENT SECTION
+   ============================================ */
+.seo-content {
+  padding: 100px 0;
+  background: white;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seo-content h2 {
+  color: var(--primary-navy);
+  font-size: 36px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: var(--font-display);
+}
+
+.seo-content h3 {
+  color: var(--primary-burgundy);
+  font-size: 24px;
+  margin: 35px 0 15px;
+  font-family: var(--font-accent);
+  font-weight: 600;
+}
+
+.seo-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-medium);
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.spirits-cta {
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--primary-navy);
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-family: var(--font-display);
+}
+
+.cta-content > p {
+  font-size: 20px;
+  color: var(--text-medium);
+  margin-bottom: 50px;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.cta-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cta-box h4 {
+  color: var(--primary-burgundy);
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: var(--font-display);
+}
+
+.cta-box p {
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.cta-box a {
+  color: var(--primary-gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-box a:hover {
+  color: var(--primary-burgundy);
+}
+
+.cta-box a[href^="mailto"] {
+  color: var(--primary-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cta-box a[href^="mailto"]:hover {
+  color: var(--primary-burgundy);
+  text-decoration: underline;
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.cta-link:hover {
+  transform: translateX(5px);
+}
+
+.hours-note {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  
+  .cocktails-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .spirits-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .spirits-hero .hero-cta {
+    flex-direction: column;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .spirits-categories,
+  .tennessee-whiskey,
+  .cocktails-section,
+  .dual-cta-section,
+  .spirits-education,
+  .why-spirits,
+  .spirits-faq,
+  .seo-content,
+  .spirits-cta {
+    padding: 60px 0;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tennessee-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .distillery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cocktails-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    gap: 25px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .accordion-header {
+    padding: 20px;
+  }
+  
+  .accordion-content {
+    padding: 0 20px;
+  }
+  
+  .accordion-content.active {
+    padding: 0 20px 20px;
+  }
+  
+  .faq-question {
+    padding: 20px;
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+  }
+  
+  .faq-answer.active {
+    padding: 0 20px 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .seo-content h2 {
+    font-size: 28px;
+  }
+  
+  .seo-content h3 {
+    font-size: 20px;
+  }
+  
+  .cta-content h2 {
+    font-size: 32px;
+  }
+  
+  .dual-cta-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+    gap: 30px;
+  }
+  
+  .cta-column {
+    padding: 40px 30px;
+  }
+  
+  .cta-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .cta-column .btn-primary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .spirits-hero .hero-title {
+    font-size: 2rem;
+  }
+  
+  .spirits-hero .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .category-content h3 {
+    font-size: 24px;
+  }
+}
+

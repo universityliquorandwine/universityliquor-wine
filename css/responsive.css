@@ -1,0 +1,241 @@
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ============================================ */
+
+/* ============================================
+   TABLET (768px - 1023px)
+   ============================================ */
+@media (max-width: 1023px) {
+  .nav-menu {
+    gap: var(--spacing-md);
+  }
+  
+  .nav-menu a {
+    font-size: 0.8125rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .collection-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
+/* ============================================
+   MOBILE (max-width: 767px)
+   ============================================ */
+@media (max-width: 767px) {
+  :root {
+    --spacing-xl: 4rem;
+    --spacing-xxl: 5rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    gap: var(--spacing-md);
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-cta {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .nav-phone {
+    font-size: 0.8125rem;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 500px;
+    padding: var(--spacing-md);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-cta .btn-primary,
+  .hero-cta .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .product-card {
+    max-width: 100%;
+  }
+  
+  /* Collection Grid */
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .collection-card {
+    height: 300px;
+  }
+  
+  /* Features Grid */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  /* Section Headers */
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Testimonials */
+  .testimonial-text {
+    font-size: 1.25rem;
+  }
+  
+  .testimonials-slider {
+    max-width: 100%;
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .testimonial-item {
+    padding: var(--spacing-md);
+  }
+  
+  /* Newsletter */
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-input {
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  /* Age Verification */
+  .age-verification-modal {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-sm);
+  }
+  
+  .age-buttons {
+    flex-direction: column;
+  }
+  
+  .age-buttons button {
+    width: 100%;
+  }
+  
+  /* Back to Top */
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE (max-width: 375px)
+   ============================================ */
+@media (max-width: 375px) {
+  .logo-image {
+    height: 45px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 28px;
+    font-size: 0.8125rem;
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP (1440px+)
+   ============================================ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1600px;
+  }
+  
+  .hero-title {
+    font-size: 5.5rem;
+  }
+  
+  .section {
+    padding: 8rem 0;
+  }
+}
+

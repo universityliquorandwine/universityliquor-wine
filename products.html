@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our premium collection of wines, spirits, and craft beers at University Liquor & Wine in Murfreesboro, TN.">
+  <title>Products | University Liquor & Wine</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  
+  <!-- Age Verification Popup -->
+  <div class="age-verification-overlay">
+    <div class="age-verification-modal">
+      <div class="age-icon">🍷</div>
+      <h2>Welcome</h2>
+      <p>You must be 21 years or older to enter this site</p>
+      <div class="age-buttons">
+        <button class="btn-enter">I am 21 or older</button>
+        <button class="btn-exit">I am under 21</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="University Liquor & Wine" class="logo-image">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="nav-cta">
+        <a href="tel:6153968088" class="nav-phone">(615) 396-8088</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" style="height: 60vh; min-height: 400px;">
+    <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1920&q=80');"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Our Collection</h1>
+      <p class="hero-subtitle">Premium spirits, fine wines, and craft beers</p>
+    </div>
+  </section>
+
+  <!-- Category Filter Tabs -->
+  <section class="section" style="background: var(--cream); padding-top: 4rem;">
+    <div class="container">
+      <div class="category-tabs" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+        <button class="category-tab active" data-category="all">All Products</button>
+        <button class="category-tab" data-category="wine">Wine</button>
+        <button class="category-tab" data-category="spirits">Spirits</button>
+        <button class="category-tab" data-category="beer">Beer & Cider</button>
+        <button class="category-tab" data-category="premium">Premium Collection</button>
+      </div>
+      
+      <!-- Search Bar -->
+      <div style="max-width: 600px; margin: 0 auto 3rem;">
+        <input type="text" class="newsletter-input" placeholder="Search products..." id="product-search" style="width: 100%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="product-grid" id="products-grid">
+        <!-- Wine Products -->
+        <div class="product-card fade-in-on-scroll" data-category="wine">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1506377247727-4b5e79832d7a?w=600&q=80" alt="Premium Red Wine">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Red Wine Collection</h3>
+            <p class="product-description">Bold and full-bodied selections from renowned vineyards worldwide</p>
+            <div class="product-meta">
+              <span class="product-origin">International</span>
+              <span class="product-type">Red Wine</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card fade-in-on-scroll" data-category="wine">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="White Wine">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Elegant White Wine</h3>
+            <p class="product-description">Crisp and refreshing whites for every occasion</p>
+            <div class="product-meta">
+              <span class="product-origin">International</span>
+              <span class="product-type">White Wine</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card fade-in-on-scroll" data-category="wine">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1553361371-9b22b2588359?w=600&q=80" alt="Sparkling Wine">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Sparkling & Champagne</h3>
+            <p class="product-description">Celebrate with premium champagne and sparkling selections</p>
+            <div class="product-meta">
+              <span class="product-origin">France, Italy</span>
+              <span class="product-type">Sparkling</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Spirits Products -->
+        <div class="product-card fade-in-on-scroll" data-category="spirits">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Tennessee Whiskey">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Tennessee Whiskey</h3>
+            <p class="product-description">Premium local and international whiskey selections</p>
+            <div class="product-meta">
+              <span class="product-origin">Tennessee, USA</span>
+              <span class="product-type">Whiskey</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card fade-in-on-scroll" data-category="spirits">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&q=80" alt="Premium Vodka">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Vodka</h3>
+            <p class="product-description">Smooth and refined vodkas from around the world</p>
+            <div class="product-meta">
+              <span class="product-origin">International</span>
+              <span class="product-type">Vodka</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card fade-in-on-scroll" data-category="spirits">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Premium Rum">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Rum</h3>
+            <p class="product-description">Aged and spiced rums from the Caribbean and beyond</p>
+            <div class="product-meta">
+              <span class="product-origin">Caribbean</span>
+              <span class="product-type">Rum</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Beer Products -->
+        <div class="product-card fade-in-on-scroll" data-category="beer">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1608270586208-8c32e0c5b0a1?w=600&q=80" alt="Craft Beer">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Craft Beer Selection</h3>
+            <p class="product-description">Local favorites and imported craft selections</p>
+            <div class="product-meta">
+              <span class="product-origin">Local & Imported</span>
+              <span class="product-type">Craft Beer</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card fade-in-on-scroll" data-category="beer">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1608270586208-8c32e0c5b0a1?w=600&q=80" alt="Hard Cider">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Hard Cider</h3>
+            <p class="product-description">Refreshing hard ciders and seltzers</p>
+            <div class="product-meta">
+              <span class="product-origin">USA</span>
+              <span class="product-type">Cider</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Premium Collection -->
+        <div class="product-card fade-in-on-scroll" data-category="premium">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Premium Collection">
+            <div class="product-overlay">
+              <button class="btn-inquire">Inquire</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Collection</h3>
+            <p class="product-description">Rare and exclusive selections for the connoisseur</p>
+            <div class="product-meta">
+              <span class="product-origin">Limited Edition</span>
+              <span class="product-type">Premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: var(--gradient-navy); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; margin-bottom: 1rem;">Can't Find What You're Looking For?</h2>
+      <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Our expert staff can help you find the perfect bottle or special order rare selections.</p>
+      <a href="contact.html" class="btn-primary" style="background: var(--gradient-gold);">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>University Liquor & Wine has been serving the Murfreesboro community with premium spirits, fine wines, and craft beers.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Store Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Monday - Saturday</span><span>9 AM - 11 PM</span></li>
+            <li><span>Sunday</span><span>10 AM - 11 PM</span></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><strong>Address:</strong><br>2834 Middle Tennessee Blvd<br>Murfreesboro, TN 37130</p>
+          <p><strong>Phone:</strong><br><a href="tel:6153968088">(615) 396-8088</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:universityliquorandwine@gmail.com">universityliquorandwine@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 University Liquor & Wine. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/age-verification.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Category filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const products = document.querySelectorAll('.product-card');
+      const searchInput = document.getElementById('product-search');
+      let currentCategory = 'all';
+      let currentSearchTerm = '';
+      
+      // Initialize - show all products
+      products.forEach(product => {
+        product.style.display = 'block';
+        product.style.opacity = '1';
+      });
+      
+      // Filter function
+      function filterProducts() {
+        products.forEach(product => {
+          const categoryMatch = currentCategory === 'all' || product.dataset.category === currentCategory;
+          const searchMatch = !currentSearchTerm || product.textContent.toLowerCase().includes(currentSearchTerm);
+          
+          if (categoryMatch && searchMatch) {
+            product.style.display = 'block';
+            setTimeout(() => {
+              product.style.opacity = '1';
+            }, 10);
+          } else {
+            product.style.opacity = '0';
+            setTimeout(() => {
+              product.style.display = 'none';
+            }, 300);
+          }
+        });
+      }
+      
+      // Category tab click handlers
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          categoryTabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          currentCategory = this.dataset.category;
+          filterProducts();
+        });
+      });
+      
+      // Search functionality
+      if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+          currentSearchTerm = e.target.value.toLowerCase();
+          filterProducts();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

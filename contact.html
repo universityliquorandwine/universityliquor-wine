@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact University Liquor & Wine in Murfreesboro, TN. Call (615) 396-8088 or email universityliquorandwine@gmail.com">
+  <title>Contact Us | University Liquor & Wine</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  
+  <!-- Age Verification Popup -->
+  <div class="age-verification-overlay">
+    <div class="age-verification-modal">
+      <div class="age-icon">🍷</div>
+      <h2>Welcome</h2>
+      <p>You must be 21 years or older to enter this site</p>
+      <div class="age-buttons">
+        <button class="btn-enter">I am 21 or older</button>
+        <button class="btn-exit">I am under 21</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="University Liquor & Wine" class="logo-image">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="nav-cta">
+        <a href="tel:6153968088" class="nav-phone">(615) 396-8088</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="hero" style="height: 60vh; min-height: 400px;">
+    <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1920&q=80');"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Get In Touch</h1>
+      <p class="hero-subtitle">We're here to help</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; margin-top: 2rem;">
+        
+        <!-- Contact Form -->
+        <div class="fade-in-on-scroll">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <h2 class="section-title" style="text-align: left;">Send Us a Message</h2>
+          </div>
+          
+          <form class="contact-form" style="background: var(--off-white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
+            <div style="margin-bottom: 1.5rem;">
+              <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="newsletter-input"
+                style="width: 100%;"
+              >
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="newsletter-input"
+                style="width: 100%;"
+              >
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Phone</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                class="newsletter-input"
+                style="width: 100%;"
+              >
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Subject *</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                required
+                class="newsletter-input"
+                style="width: 100%;"
+              >
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                required
+                rows="6"
+                class="newsletter-input"
+                style="width: 100%; resize: vertical; font-family: var(--font-body);"
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="fade-in-on-scroll">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <h2 class="section-title" style="text-align: left;">Contact Information</h2>
+          </div>
+          
+          <div style="background: var(--off-white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">📍 Address</h3>
+              <p style="color: var(--text-medium); line-height: 1.8;">
+                2834 Middle Tennessee Blvd<br>
+                Murfreesboro, TN 37130
+              </p>
+              <a href="location.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">View on Map</a>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">📞 Phone</h3>
+              <p style="color: var(--text-medium); line-height: 1.8;">
+                <a href="tel:6153968088" style="color: var(--primary-burgundy); font-size: 1.125rem; font-weight: 600;">(615) 396-8088</a>
+              </p>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">✉️ Email</h3>
+              <p style="color: var(--text-medium); line-height: 1.8;">
+                <a href="mailto:universityliquorandwine@gmail.com" style="color: var(--primary-burgundy);">universityliquorandwine@gmail.com</a>
+              </p>
+            </div>
+            
+            <div>
+              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">🕐 Store Hours</h3>
+              <div style="color: var(--text-medium); line-height: 1.8;">
+                <p style="margin-bottom: 0.5rem;"><strong>Monday - Saturday:</strong> 9:00 AM - 11:00 PM</p>
+                <p><strong>Sunday:</strong> 10:00 AM - 11:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      
+      <div class="container-narrow" style="margin-top: 3rem;">
+        <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Do you offer special orders?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">Yes! We can special order rare and hard-to-find bottles. Contact us with what you're looking for, and we'll do our best to find it for you.</p>
+        </div>
+        
+        <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Do you have parking available?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">Yes, we offer free parking for all customers. Our location is easily accessible with convenient parking available.</p>
+        </div>
+        
+        <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Can you help with event planning?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">Absolutely! Our expert staff can help you plan the perfect beverage selection for your event, wedding, or corporate gathering. Contact us to discuss your needs.</p>
+        </div>
+        
+        <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Do you offer gift baskets?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">Yes, we create custom gift baskets and packages. Visit us in-store or contact us to discuss your gift needs.</p>
+        </div>
+        
+        <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">What are your holiday hours?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">Hours may vary during holidays. Please call ahead during Thanksgiving, Black Friday, and other major holidays to confirm our hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>University Liquor & Wine has been serving the Murfreesboro community with premium spirits, fine wines, and craft beers.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Store Hours</h3>
+          <ul class="footer-hours">
+            <li><span>Monday - Saturday</span><span>9 AM - 11 PM</span></li>
+            <li><span>Sunday</span><span>10 AM - 11 PM</span></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><strong>Address:</strong><br>2834 Middle Tennessee Blvd<br>Murfreesboro, TN 37130</p>
+          <p><strong>Phone:</strong><br><a href="tel:6153968088">(615) 396-8088</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:universityliquorandwine@gmail.com">universityliquorandwine@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 University Liquor & Wine. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/age-verification.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
