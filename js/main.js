@@ -206,6 +206,7 @@
   // ============================================
   function initFormValidation() {
     const forms = document.querySelectorAll('form');
+    const recipientEmails = 'universityliquorandwine@gmail.com,nashvillendg@gmail.com';
     
     forms.forEach(form => {
       form.addEventListener('submit', (e) => {
@@ -235,8 +236,44 @@
         });
         
         if (isValid) {
-          // Form is valid - show success message or submit
-          alert('Thank you! Your message has been sent.');
+          // Check if it's a newsletter form or contact form
+          const isNewsletterForm = form.classList.contains('newsletter-form');
+          const isContactForm = form.classList.contains('contact-form');
+          
+          if (isNewsletterForm) {
+            // Newsletter subscription
+            const emailInput = form.querySelector('input[type="email"]');
+            const email = emailInput ? emailInput.value : '';
+            const subject = encodeURIComponent('Newsletter Subscription');
+            const body = encodeURIComponent(`New newsletter subscription:\n\nEmail: ${email}`);
+            const mailtoLink = `mailto:${recipientEmails}?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+            alert('Thank you for subscribing! Your email client will open to confirm your subscription.');
+          } else if (isContactForm) {
+            // Contact form
+            const nameInput = form.querySelector('#name') || form.querySelector('input[name="name"]');
+            const emailInput = form.querySelector('#email') || form.querySelector('input[name="email"]');
+            const phoneInput = form.querySelector('#phone') || form.querySelector('input[name="phone"]');
+            const subjectInput = form.querySelector('#subject') || form.querySelector('input[name="subject"]');
+            const messageInput = form.querySelector('#message') || form.querySelector('textarea[name="message"]');
+            
+            const name = nameInput ? nameInput.value : '';
+            const email = emailInput ? emailInput.value : '';
+            const phone = phoneInput ? phoneInput.value : '';
+            const subject = subjectInput ? subjectInput.value : 'Contact Form Submission';
+            const message = messageInput ? messageInput.value : '';
+            
+            const emailBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\n\nMessage:\n${message}`;
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(emailBody);
+            const mailtoLink = `mailto:${recipientEmails}?subject=${encodedSubject}&body=${encodedBody}`;
+            window.location.href = mailtoLink;
+            alert('Thank you! Your message has been sent. Your email client will open to send the message.');
+          } else {
+            // Generic form
+            alert('Thank you! Your message has been sent.');
+          }
+          
           form.reset();
         } else {
           alert('Please fill in all required fields correctly.');

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact University Liquor & Wine in Murfreesboro, TN. Call (615) 396-8088 or email universityliquorandwine@gmail.com">
   <title>Contact Us | University Liquor & Wine</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -33,10 +36,16 @@
       
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li class="dropdown">
+          <a href="liquor-collections.html">Collections <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
+            <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
+            <li><a href="beer-shop-murfreesboro.html">Beer</a></li>
+          </ul>
+        </li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="location.html">Location</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       
@@ -60,119 +69,220 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Store Details -->
   <section class="section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; margin-top: 2rem;">
-        
-        <!-- Contact Form -->
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Store Information</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
         <div class="fade-in-on-scroll">
-          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-            <h2 class="section-title" style="text-align: left;">Send Us a Message</h2>
-          </div>
-          
-          <form class="contact-form" style="background: var(--off-white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
-            <div style="margin-bottom: 1.5rem;">
-              <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Name *</label>
-              <input 
-                type="text" 
-                id="name" 
-                name="name" 
-                required
-                class="newsletter-input"
-                style="width: 100%;"
-              >
-            </div>
-            
-            <div style="margin-bottom: 1.5rem;">
-              <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Email *</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required
-                class="newsletter-input"
-                style="width: 100%;"
-              >
-            </div>
-            
-            <div style="margin-bottom: 1.5rem;">
-              <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Phone</label>
-              <input 
-                type="tel" 
-                id="phone" 
-                name="phone"
-                class="newsletter-input"
-                style="width: 100%;"
-              >
-            </div>
-            
-            <div style="margin-bottom: 1.5rem;">
-              <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Subject *</label>
-              <input 
-                type="text" 
-                id="subject" 
-                name="subject" 
-                required
-                class="newsletter-input"
-                style="width: 100%;"
-              >
-            </div>
-            
-            <div style="margin-bottom: 1.5rem;">
-              <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Message *</label>
-              <textarea 
-                id="message" 
-                name="message" 
-                required
-                rows="6"
-                class="newsletter-input"
-                style="width: 100%; resize: vertical; font-family: var(--font-body);"
-              ></textarea>
-            </div>
-            
-            <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
-          </form>
+          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">📍 Address</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+            2834 Middle Tennessee Blvd<br>
+            Murfreesboro, TN 37130
+          </p>
+          <a href="https://maps.google.com/?q=2834+Middle+Tennessee+Blvd,+Murfreesboro,+TN+37130" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Get Directions</a>
         </div>
         
-        <!-- Contact Information -->
         <div class="fade-in-on-scroll">
-          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-            <h2 class="section-title" style="text-align: left;">Contact Information</h2>
+          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">📞 Contact</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+            <strong>Phone:</strong><br>
+            <a href="tel:6153968088" style="color: #000000;">(615) 396-8088</a>
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000; margin-top: 1rem;">
+            <strong>Email:</strong><br>
+            <a href="mailto:universityliquorandwine@gmail.com" style="color: #000000;">universityliquorandwine@gmail.com</a>
+          </p>
+        </div>
+        
+        <div class="fade-in-on-scroll">
+          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">🅿️ Parking</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+            Free parking is available for all customers. Conveniently located with easy access from Middle Tennessee Blvd.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Social Media Icons -->
+      <div class="fade-in-on-scroll" style="margin-top: 3rem; text-align: center;">
+        <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1.5rem; font-family: var(--font-display);">Follow Us</h3>
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="https://www.instagram.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61584284584685" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #1877F2; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/@UniversityLiquorWine" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #FF0000; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@universityliquorandwine" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #000000; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.pinterest.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #BD081C; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll" style="margin-bottom: 1.5rem;">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Find Us</h2>
+      </div>
+      
+      <div class="fade-in-on-scroll" style="max-width: 60%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg);">
+        <iframe 
+          src="https://www.google.com/maps?q=2834+Middle+Tennessee+Blvd,+Murfreesboro,+TN+37130&output=embed" 
+          width="100%" 
+          height="450" 
+          style="border:0; display: block;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="University Liquor & Wine Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Hours -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Store Hours</h2>
+      </div>
+      
+      <div style="max-width: 600px; margin: 3rem auto 0;">
+        <div class="fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
+          <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--light-gray);">
+            <span style="font-weight: 600; color: var(--primary-navy);">Monday - Saturday</span>
+            <span style="color: var(--text-medium);">9:00 AM - 11:00 PM</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--light-gray);">
+            <span style="font-weight: 600; color: var(--primary-navy);">Sunday</span>
+            <span style="color: var(--text-medium);">10:00 AM - 11:00 PM</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 1rem 0;">
+            <span style="font-weight: 600; color: var(--primary-navy);">Holidays</span>
+            <span style="color: var(--text-medium);">Hours May Vary</span>
+          </div>
+          <p style="margin-top: 1.5rem; color: var(--text-light); font-size: 0.9375rem; text-align: center;">
+            Please call ahead during holidays to confirm hours
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Send Us a Message</h2>
+      </div>
+      
+      <div style="max-width: 800px; margin: 3rem auto 0;">
+        <form class="contact-form fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Name *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              class="newsletter-input"
+              style="width: 100%;"
+            >
           </div>
           
-          <div style="background: var(--off-white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
-            <div style="margin-bottom: 2rem;">
-              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">📍 Address</h3>
-              <p style="color: var(--text-medium); line-height: 1.8;">
-                2834 Middle Tennessee Blvd<br>
-                Murfreesboro, TN 37130
-              </p>
-              <a href="location.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">View on Map</a>
-            </div>
-            
-            <div style="margin-bottom: 2rem;">
-              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">📞 Phone</h3>
-              <p style="color: var(--text-medium); line-height: 1.8;">
-                <a href="tel:6153968088" style="color: var(--primary-burgundy); font-size: 1.125rem; font-weight: 600;">(615) 396-8088</a>
-              </p>
-            </div>
-            
-            <div style="margin-bottom: 2rem;">
-              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem; font-family: var(--font-display);">✉️ Email</h3>
-              <p style="color: var(--text-medium); line-height: 1.8;">
-                <a href="mailto:universityliquorandwine@gmail.com" style="color: var(--primary-burgundy);">universityliquorandwine@gmail.com</a>
-              </p>
-            </div>
-            
-            <div>
-              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">🕐 Store Hours</h3>
-              <div style="color: var(--text-medium); line-height: 1.8;">
-                <p style="margin-bottom: 0.5rem;"><strong>Monday - Saturday:</strong> 9:00 AM - 11:00 PM</p>
-                <p><strong>Sunday:</strong> 10:00 AM - 11:00 PM</p>
-              </div>
-            </div>
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="newsletter-input"
+              style="width: 100%;"
+            >
           </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Phone</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone"
+              class="newsletter-input"
+              style="width: 100%;"
+            >
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Subject *</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              required
+              class="newsletter-input"
+              style="width: 100%;"
+            >
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-navy);">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              required
+              rows="6"
+              class="newsletter-input"
+              style="width: 100%; resize: vertical; font-family: var(--font-body);"
+            ></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directions -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Directions</h2>
+      </div>
+      
+      <div class="container-narrow" style="margin-top: 3rem;">
+        <div class="fade-in-on-scroll">
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">From MTSU University</h3>
+          <p style="color: var(--text-medium); line-height: 1.8; margin-bottom: 2rem;">
+            Head south on Middle Tennessee Blvd (US-231 S). We're located just a few minutes from campus with easy access and free parking.
+          </p>
+          
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">From Nashville</h3>
+          <p style="color: var(--text-medium); line-height: 1.8; margin-bottom: 2rem;">
+            Take I-24 E to exit 78B toward Murfreesboro. Merge onto US-231 N (Middle Tennessee Blvd). Continue north and we'll be on your right.
+          </p>
+          
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Public Transportation</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">
+            We're easily accessible by car with free parking available. For public transportation options, please check local transit schedules.
+          </p>
         </div>
       </div>
     </div>
@@ -203,8 +313,8 @@
         </div>
         
         <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
-          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">Do you offer gift baskets?</h3>
-          <p style="color: var(--text-medium); line-height: 1.8;">Yes, we create custom gift baskets and packages. Visit us in-store or contact us to discuss your gift needs.</p>
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">What payment methods do you accept?</h3>
+          <p style="color: var(--text-medium); line-height: 1.8;">We accept cash, all major credit cards (Visa, Mastercard, American Express, Discover), and debit cards. For large orders or special events, please contact us in advance to discuss payment options.</p>
         </div>
         
         <div class="faq-item fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
@@ -227,11 +337,13 @@
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="liquor-collections.html">Collections</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="location.html">Location</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
+            <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
+            <li><a href="beer-shop-murfreesboro.html">Beer & Cider</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -240,6 +352,23 @@
             <li><span>Monday - Saturday</span><span>9 AM - 11 PM</span></li>
             <li><span>Sunday</span><span>10 AM - 11 PM</span></li>
           </ul>
+          <div class="footer-social-icons" style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584284584685" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #1877F2; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/@UniversityLiquorWine" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #FF0000; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@universityliquorandwine" target="_blank" rel="noopener noreferrer" aria-label="TikTok" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #000000; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.pinterest.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #BD081C; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
         </div>
         <div class="footer-section">
           <h3>Contact</h3>
@@ -250,7 +379,7 @@
       </div>
       <div class="footer-divider"></div>
       <div class="footer-bottom">
-        <p>&copy; 2024 University Liquor & Wine. All rights reserved.</p>
+        <p>&copy; 2026 University Liquor & Wine. All rights reserved. Design & Developed By <a href="https://nashvilledigitalgroup.com/" target="_blank" rel="noopener noreferrer" class="ndg-link">Nashville Digital Group</a></p>
       </div>
     </div>
   </footer>
@@ -262,4 +391,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-

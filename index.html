@@ -7,6 +7,9 @@
   <meta name="keywords" content="liquor store Murfreesboro, wine shop MTSU, spirits Tennessee, craft beer, premium liquor">
   <title>University Liquor & Wine | Premium Spirits & Fine Wines in Murfreesboro, TN</title>
   
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -40,10 +43,16 @@
       
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li class="dropdown">
+          <a href="liquor-collections.html">Collections <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
+            <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
+            <li><a href="beer-shop-murfreesboro.html">Beer</a></li>
+          </ul>
+        </li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="location.html">Location</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       
@@ -64,8 +73,8 @@
   <section class="hero">
     <div class="hero-background"></div>
     <div class="hero-content">
-      <h1 class="hero-title">Premium Spirits<br>Fine Wines<br>Craft Selection</h1>
-      <p class="hero-subtitle">Curated excellence near MTSU University</p>
+      <h1 class="hero-title">University<br>Liquor & Wine</h1>
+      <p class="hero-subtitle">Premium Liquor Store in Murfreesboro</p>
       <div class="hero-cta">
         <a href="#products" class="btn-primary">Explore Collection</a>
         <a href="tel:6153968088" class="btn-secondary">Call Us</a>
@@ -86,29 +95,29 @@
       </div>
       
       <div class="collection-grid">
-        <div class="collection-card fade-in-on-scroll stagger-1">
+        <a href="wine-shop-murfreesboro.html" class="collection-card fade-in-on-scroll stagger-1">
           <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Premium Wine Collection">
           <div class="collection-overlay">
             <h3 class="collection-title">Wine Collection</h3>
             <p class="collection-description">Red, White, Rosé, Sparkling & Organic</p>
           </div>
-        </div>
+        </a>
         
-        <div class="collection-card fade-in-on-scroll stagger-2">
+        <a href="spirit-shop-murfreesboro.html" class="collection-card fade-in-on-scroll stagger-2">
           <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=800&q=80" alt="Premium Spirits Collection">
           <div class="collection-overlay">
             <h3 class="collection-title">Spirits Collection</h3>
             <p class="collection-description">Whiskey, Vodka, Rum, Gin, Tequila & Cognac</p>
           </div>
-        </div>
+        </a>
         
-        <div class="collection-card fade-in-on-scroll stagger-3">
+        <a href="beer-shop-murfreesboro.html" class="collection-card fade-in-on-scroll stagger-3">
           <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80" alt="Craft Beer Collection">
           <div class="collection-overlay">
             <h3 class="collection-title">Craft Beer & Cider</h3>
             <p class="collection-description">Local, Imported & Specialty Selections</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -163,12 +172,12 @@
         <p class="section-subtitle">Browse our extensive collection organized by your preferences</p>
       </div>
       
-      <div class="product-grid">
+      <div class="product-grid shop-category-grid">
         <div class="product-card fade-in-on-scroll">
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Red Wine Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -184,7 +193,7 @@
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1506377247727-4b5e79832d7a?w=600&q=80" alt="White Wine Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -200,7 +209,7 @@
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&q=80" alt="Whiskey Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -216,7 +225,7 @@
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Craft Beer Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -232,7 +241,7 @@
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&q=80" alt="Vodka Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -248,7 +257,7 @@
           <div class="product-image">
             <img src="https://images.unsplash.com/photo-1553361371-9b22b2588359?w=600&q=80" alt="Sparkling Wine Collection">
             <div class="product-overlay">
-              <a href="products.html" class="btn-inquire">View Collection</a>
+              <a href="liquor-collections.html" class="btn-inquire">View Collection</a>
             </div>
           </div>
           <div class="product-info">
@@ -258,6 +267,75 @@
               <span class="product-type">Wine</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT INFORMATION
+       ============================================ -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in-on-scroll">
+        <div class="section-decoration"></div>
+        <h2 class="section-title">Contact Information</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+        <div class="fade-in-on-scroll">
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">📍 Address</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+            2834 Middle Tennessee Blvd<br>
+            Murfreesboro, TN 37130
+          </p>
+          <a href="contact.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Get Directions</a>
+        </div>
+        
+        <div class="fade-in-on-scroll">
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">📞 Contact</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+            <strong>Phone:</strong><br>
+            <a href="tel:6153968088" style="color: var(--text-dark);">(615) 396-8088</a>
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark); margin-top: 1rem;">
+            <strong>Email:</strong><br>
+            <a href="mailto:universityliquorandwine@gmail.com" style="color: var(--text-dark);">universityliquorandwine@gmail.com</a>
+          </p>
+        </div>
+        
+        <div class="fade-in-on-scroll">
+          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">🕐 Store Hours</h3>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+            <strong>Monday - Saturday:</strong><br>
+            9:00 AM - 11:00 PM
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark); margin-top: 1rem;">
+            <strong>Sunday:</strong><br>
+            10:00 AM - 11:00 PM
+          </p>
+        </div>
+      </div>
+      
+      <!-- Social Media Icons -->
+      <div class="fade-in-on-scroll" style="margin-top: 3rem; text-align: center;">
+        <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1.5rem; font-family: var(--font-display);">Follow Us</h3>
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="https://www.instagram.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61584284584685" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #1877F2; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/@UniversityLiquorWine" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #FF0000; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@universityliquorandwine" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #000000; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.pinterest.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-icon-link" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: #BD081C; border-radius: 50%; color: white; font-size: 1.5rem; transition: transform var(--transition-normal); text-decoration: none; box-shadow: var(--shadow-sm);">
+            <i class="fab fa-pinterest"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -348,6 +426,7 @@
       <form class="newsletter-form fade-in-on-scroll">
         <input 
           type="email" 
+          name="email"
           class="newsletter-input" 
           placeholder="Enter your email address" 
           required
@@ -373,11 +452,13 @@
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="liquor-collections.html">Collections</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="location.html">Location</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
+            <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
+            <li><a href="beer-shop-murfreesboro.html">Beer & Cider</a></li>
           </ul>
         </div>
         
@@ -386,8 +467,24 @@
           <ul class="footer-hours">
             <li><span>Monday - Saturday</span><span>9 AM - 11 PM</span></li>
             <li><span>Sunday</span><span>10 AM - 11 PM</span></li>
-            <li><span>Thanksgiving & Black Friday</span><span>Hours May Vary</span></li>
           </ul>
+          <div class="footer-social-icons" style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584284584685" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #1877F2; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/@UniversityLiquorWine" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #FF0000; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@universityliquorandwine" target="_blank" rel="noopener noreferrer" aria-label="TikTok" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #000000; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.pinterest.com/universityliquorandwine/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #BD081C; border-radius: 50%; color: white; font-size: 1.2rem; transition: transform 0.3s ease; text-decoration: none;">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
         </div>
         
         <div class="footer-section">
@@ -401,12 +498,7 @@
       <div class="footer-divider"></div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 University Liquor & Wine. All rights reserved.</p>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
-          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
-          <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">🐦</a>
-        </div>
+        <p>&copy; 2026 University Liquor & Wine. All rights reserved. Design & Developed By <a href="https://nashvilledigitalgroup.com/" target="_blank" rel="noopener noreferrer" class="ndg-link">Nashville Digital Group</a></p>
       </div>
     </div>
   </footer>

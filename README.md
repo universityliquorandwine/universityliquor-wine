@@ -16,10 +16,9 @@ A sophisticated, production-grade luxury website for University Liquor & Wine, a
 ```
 university-liquor-wine/
 ├── index.html              # Home page (main landing page)
-├── products.html           # Products catalog page
+├── liquor-collections.html  # Liquor collections catalog page
 ├── about.html             # About us page
 ├── services.html          # Services page
-├── location.html          # Location & hours page
 ├── contact.html           # Contact & FAQ page
 ├── css/
 │   ├── style.css          # Main stylesheet with design system
@@ -118,7 +117,7 @@ university-liquor-wine/
 - Newsletter signup
 - Comprehensive footer
 
-### 2. Products Page (products.html)
+### 2. Liquor Collections Page (liquor-collections.html)
 - Category filter tabs
 - Product search functionality
 - Product grid with cards
@@ -135,14 +134,7 @@ university-liquor-wine/
 - Process explanation
 - CTA section
 
-### 5. Location Page (location.html)
-- Store details
-- Google Maps embed
-- Store hours
-- Directions
-- Photo gallery
-
-### 6. Contact Page (contact.html)
+### 5. Contact Page (contact.html)
 - Contact form
 - Contact information
 - FAQ accordion
@@ -202,7 +194,7 @@ All images currently use Unsplash placeholders. To replace with actual store pho
    - Update in contact page
 
 3. **Product Information:**
-   - Update product cards in products.html
+   - Update product cards in liquor-collections.html
    - Update featured collections in index.html
 
 ### Adding New Products

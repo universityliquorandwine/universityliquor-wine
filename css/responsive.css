@@ -23,11 +23,19 @@
     gap: var(--spacing-md);
   }
   
+  .shop-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .collection-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
   .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   
@@ -64,6 +72,23 @@
     visibility: hidden;
     transition: all var(--transition-normal);
     gap: var(--spacing-md);
+  }
+  
+  .nav-menu .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: var(--cream);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-left: 2px solid var(--primary-gold);
+    padding-left: 1rem;
+  }
+  
+  .nav-menu .dropdown > a::before {
+    content: '▼';
   }
   
   .nav-menu.active {
@@ -118,6 +143,10 @@
     gap: var(--spacing-md);
   }
   
+  .shop-category-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .product-card {
     max-width: 100%;
   }
@@ -135,6 +164,10 @@
   .features-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
   }
   
   /* Section Headers */
