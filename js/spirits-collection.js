@@ -120,28 +120,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // ============================================
-  // MOBILE MENU TOGGLE
+  // MOBILE MENU TOGGLE - REMOVED
   // ============================================
-  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  
-  if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', function() {
-      this.classList.toggle('active');
-      navMenu.classList.toggle('active');
-      document.body.classList.toggle('menu-open');
-    });
-    
-    // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-        document.body.classList.remove('menu-open');
-      });
-    });
-  }
+  // Mobile menu toggle is handled by main.js to avoid conflicts
+  // This ensures consistent behavior across all pages
   
   // ============================================
   // BACK TO TOP BUTTON

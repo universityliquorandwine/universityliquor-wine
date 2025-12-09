@@ -27,9 +27,64 @@
     
     // Mobile menu toggle
     if (mobileToggle && navMenu) {
-      mobileToggle.addEventListener('click', () => {
+      mobileToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        
+        const isActive = navMenu.classList.contains('active');
+        
+        // Toggle menu
         navMenu.classList.toggle('active');
         mobileToggle.classList.toggle('active');
+        
+        // Debug logging
+        console.log('Menu toggle clicked. Active state:', !isActive);
+        console.log('Menu classes:', navMenu.className);
+        console.log('Menu computed display:', window.getComputedStyle(navMenu).display);
+        console.log('Menu computed visibility:', window.getComputedStyle(navMenu).visibility);
+        console.log('Menu computed opacity:', window.getComputedStyle(navMenu).opacity);
+        console.log('Menu computed transform:', window.getComputedStyle(navMenu).transform);
+        console.log('Menu computed z-index:', window.getComputedStyle(navMenu).zIndex);
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+          // Force menu to be visible
+          navMenu.style.display = 'flex';
+          navMenu.style.visibility = 'visible';
+          navMenu.style.opacity = '1';
+          navMenu.style.transform = 'translateY(0)';
+          navMenu.style.zIndex = '1001';
+          
+          // Auto-expand Collections dropdown when menu opens
+          const collectionsDropdown = document.querySelector('.nav-menu .dropdown');
+          if (collectionsDropdown && window.innerWidth <= 768) {
+            collectionsDropdown.classList.add('active');
+            // Update arrow direction
+            const arrow = collectionsDropdown.querySelector('.dropdown-arrow');
+            if (arrow) {
+              arrow.textContent = '▲';
+            }
+          }
+        } else {
+          document.body.style.overflow = '';
+          navMenu.style.display = '';
+          navMenu.style.visibility = '';
+          navMenu.style.opacity = '';
+          navMenu.style.transform = '';
+          navMenu.style.zIndex = '';
+          
+          // Collapse Collections dropdown when menu closes
+          const collectionsDropdown = document.querySelector('.nav-menu .dropdown');
+          if (collectionsDropdown) {
+            collectionsDropdown.classList.remove('active');
+            // Update arrow direction
+            const arrow = collectionsDropdown.querySelector('.dropdown-arrow');
+            if (arrow) {
+              arrow.textContent = '▼';
+            }
+          }
+        }
         
         // Animate hamburger icon
         const spans = mobileToggle.querySelectorAll('span');
@@ -41,6 +96,96 @@
           spans[0].style.transform = '';
           spans[1].style.opacity = '1';
           spans[2].style.transform = '';
+        }
+      });
+      
+      // Handle dropdown menus on mobile
+      // Separate click handlers for Collections text link and arrow toggle
+      const dropdownToggles = document.querySelectorAll('.nav-menu .dropdown-toggle');
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          
+          // Only prevent default and toggle on mobile
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = toggle.closest('.dropdown');
+            if (dropdown) {
+              dropdown.classList.toggle('active');
+              
+              // Update arrow direction
+              const arrow = toggle.querySelector('.dropdown-arrow');
+              if (arrow) {
+                if (dropdown.classList.contains('active')) {
+                  arrow.textContent = '▲';
+                } else {
+                  arrow.textContent = '▼';
+                }
+              }
+            }
+          }
+          // On desktop, do nothing (let default behavior happen if any)
+        });
+      });
+      
+      // Allow Collections text link to navigate normally on mobile
+      const dropdownLinks = document.querySelectorAll('.nav-menu .dropdown-link');
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // On mobile, allow navigation and close menu
+          if (window.innerWidth <= 768) {
+            // Close mobile menu when navigating
+            if (navMenu) {
+              navMenu.classList.remove('active');
+              if (mobileToggle) {
+                const spans = mobileToggle.querySelectorAll('span');
+                spans[0].style.transform = '';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = '';
+              }
+              document.body.style.overflow = '';
+            }
+            // Allow default navigation behavior
+          }
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          const isClickInsideMenu = navMenu.contains(e.target);
+          const isClickOnToggle = mobileToggle.contains(e.target);
+          
+          if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
+            // Close menu properly
+            navMenu.classList.remove('active');
+            mobileToggle.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Clear all inline styles
+            navMenu.style.display = '';
+            navMenu.style.visibility = '';
+            navMenu.style.opacity = '';
+            navMenu.style.transform = '';
+            navMenu.style.zIndex = '';
+            
+            // Collapse Collections dropdown
+            const collectionsDropdown = document.querySelector('.nav-menu .dropdown');
+            if (collectionsDropdown) {
+              collectionsDropdown.classList.remove('active');
+              // Update arrow direction
+              const arrow = collectionsDropdown.querySelector('.dropdown-arrow');
+              if (arrow) {
+                arrow.textContent = '▼';
+              }
+            }
+            
+            // Reset hamburger icon
+            const spans = mobileToggle.querySelectorAll('span');
+            spans[0].style.transform = '';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = '';
+          }
         }
       });
     }

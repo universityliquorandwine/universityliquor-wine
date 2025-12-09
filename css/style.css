@@ -83,6 +83,19 @@ body {
 }
 
 /* ============================================
+   RESPONSIVE IMAGES - PREVENT OVERFLOW
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* ============================================
    TYPOGRAPHY STYLES
    ============================================ */
 h1, h2, h3, h4, h5, h6 {
@@ -260,6 +273,281 @@ a {
 }
 
 /* ============================================
+   CONTACT INFORMATION SECTION (Home Page)
+   ============================================ */
+.contact-info-section .section-title {
+  text-align: center;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-info-item {
+  text-align: center;
+}
+
+.contact-info-heading {
+  font-size: 1.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.contact-info-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact-info-text strong {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.contact-info-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.contact-info-link:hover {
+  color: var(--primary-gold);
+  text-decoration: underline;
+}
+
+.contact-info-button {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Desktop-specific spacing adjustments for Contact Information section */
+@media (min-width: 769px) {
+  /* Reduce line-height for more compact spacing between labels and values */
+  .contact-info-text {
+    line-height: 1.4;
+  }
+  
+  /* Reduce spacing after strong labels (Phone:, Email:, day labels) */
+  .contact-info-text strong {
+    margin-bottom: 6px;
+    display: block;
+    line-height: 1.2;
+  }
+  
+  /* Reduce spacing in paragraphs containing labels and values */
+  .contact-info-item .contact-info-text {
+    margin-bottom: 0;
+  }
+  
+  /* Additional spacing reduction for Contact section (Phone/Email) */
+  .contact-info-item:nth-child(2) .contact-info-text {
+    line-height: 1.35;
+  }
+  
+  .contact-info-item:nth-child(2) .contact-info-text strong {
+    margin-bottom: 5px;
+  }
+  
+  /* Additional spacing reduction for Store Hours section */
+  .contact-info-item:nth-child(3) .contact-info-text {
+    line-height: 1.35;
+  }
+  
+  .contact-info-item:nth-child(3) .contact-info-text strong {
+    margin-bottom: 5px;
+  }
+  
+  /* Reduce margin-top between separate paragraphs in Contact section */
+  .contact-info-item:nth-child(2) .contact-info-text + .contact-info-text {
+    margin-top: 0.75rem;
+  }
+  
+  /* Reduce margin-top between separate paragraphs in Store Hours section */
+  .contact-info-item:nth-child(3) .contact-info-text + .contact-info-text {
+    margin-top: 0.75rem;
+  }
+}
+
+/* Responsive styles for Contact Information section */
+@media (max-width: 768px) {
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-info-heading {
+    font-size: 1.375rem;
+  }
+  
+  .contact-info-text {
+    font-size: 1rem;
+  }
+  
+  .contact-info-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ============================================
+   STORE INFORMATION SECTION (Contact Page)
+   ============================================ */
+.store-info-section .section-title {
+  text-align: center;
+}
+
+.store-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.store-info-item {
+  text-align: center;
+}
+
+.store-info-heading {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.store-info-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.store-info-text strong {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.store-info-link {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.store-info-link:hover {
+  color: var(--primary-gold);
+  text-decoration: underline;
+}
+
+.store-info-button {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ============================================
+   STORE HOURS SECTION (Contact Page)
+   ============================================ */
+.store-hours-section .section-title {
+  text-align: center;
+}
+
+.store-hours-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.hours-row {
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-gray);
+  text-align: center;
+}
+
+.hours-row-last {
+  border-bottom: none;
+}
+
+.hours-day {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hours-time {
+  display: block;
+  color: var(--text-medium);
+  text-align: center;
+}
+
+.hours-note {
+  margin-top: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+/* Responsive styles for Store Information and Store Hours sections */
+@media (max-width: 768px) {
+  .store-info-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .store-info-heading {
+    font-size: 1.375rem;
+  }
+  
+  .store-info-text {
+    font-size: 1rem;
+  }
+  
+  .store-info-button {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .store-hours-container {
+    padding: 1.5rem;
+  }
+  
+  .hours-row {
+    padding: 0.875rem 0;
+  }
+  
+  .hours-day {
+    font-size: 0.9375rem;
+  }
+  
+  .hours-time {
+    font-size: 0.9375rem;
+  }
+}
+
+/* ============================================
    LOGO - TEXT-BASED ELEGANT DESIGN
    ============================================ */
 .logo {
@@ -396,9 +684,43 @@ a {
   width: 100%;
 }
 
+.nav-menu .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-menu .dropdown-link {
+  flex: 1;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color var(--transition-normal);
+}
+
+.nav-menu .dropdown-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-menu .dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  color: inherit;
+}
+
+.nav-menu .dropdown-toggle:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+}
+
 .nav-menu .dropdown-arrow {
   font-size: 0.625rem;
-  margin-left: 0.5rem;
   transition: transform var(--transition-normal);
   display: inline-block;
   line-height: 1;
@@ -493,7 +815,7 @@ a {
 .mobile-menu-toggle span {
   width: 25px;
   height: 2px;
-  background: var(--primary-navy);
+  background: white;
   transition: var(--transition-fast);
 }
 
@@ -1115,19 +1437,44 @@ textarea.error:focus {
   margin-bottom: var(--spacing-xl);
 }
 
+.footer-section {
+  text-align: center;
+}
+
 .footer-section h3 {
   font-family: var(--font-display);
   font-size: 1.25rem;
   color: var(--primary-gold);
   margin-bottom: var(--spacing-md);
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
-.footer-section p,
+.footer-section p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  font-size: 0.9375rem;
+  text-align: center;
+  margin: 0 auto 1rem;
+  max-width: 100%;
+}
+
+.footer-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Center contact section labels and content */
+.footer-section p strong {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
 .footer-section a {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.8;
   font-size: 0.9375rem;
+  text-align: center;
 }
 
 .footer-section a:hover {
@@ -1138,15 +1485,18 @@ textarea.error:focus {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .footer-section .footer-links {
   display: block;
+  text-align: center;
 }
 
 .footer-section .footer-links li {
   margin-bottom: 12px;
   display: block;
+  text-align: center;
 }
 
 .footer-section .footer-links a {
@@ -1155,6 +1505,7 @@ textarea.error:focus {
   transition: color 0.3s ease;
   font-size: 14px;
   display: block;
+  text-align: center;
 }
 
 .footer-section .footer-links a:hover {
@@ -1182,14 +1533,32 @@ textarea.error:focus {
 
 .footer-hours {
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-hours li {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin-bottom: var(--spacing-xs);
   padding-bottom: var(--spacing-xs);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-hours li span {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.footer-hours li span:first-child {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-hours li span:last-child {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-divider {
@@ -1235,6 +1604,17 @@ textarea.error:focus {
   gap: var(--spacing-md);
   margin-top: var(--spacing-md);
   justify-content: center;
+}
+
+/* Footer Social Icons Container */
+.footer-social-icons {
+  display: flex !important;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-icons a {

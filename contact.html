@@ -106,7 +106,12 @@
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="liquor-collections.html">Collections <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-header">
+            <a href="liquor-collections.html" class="dropdown-link">Collections</a>
+            <button class="dropdown-toggle" aria-label="Toggle Collections menu" type="button">
+              <span class="dropdown-arrow">▼</span>
+            </button>
+          </div>
           <ul class="dropdown-menu">
             <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
             <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
@@ -139,38 +144,38 @@
   </section>
 
   <!-- Store Details -->
-  <section class="section">
+  <section class="section store-info-section">
     <div class="container">
       <div class="section-header fade-in-on-scroll">
         <div class="section-decoration"></div>
         <h2 class="section-title">Store Information</h2>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">📍 Address</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+      <div class="store-info-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+        <div class="fade-in-on-scroll store-info-item">
+          <h3 class="store-info-heading">📍 Address</h3>
+          <p class="store-info-text">
             2834 Middle Tennessee Blvd<br>
             Murfreesboro, TN 37130
           </p>
-          <a href="https://maps.google.com/?q=2834+Middle+Tennessee+Blvd,+Murfreesboro,+TN+37130" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Get Directions</a>
+          <a href="https://maps.google.com/?q=2834+Middle+Tennessee+Blvd,+Murfreesboro,+TN+37130" target="_blank" rel="noopener noreferrer" class="btn-secondary store-info-button">Get Directions</a>
         </div>
         
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">📞 Contact</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+        <div class="fade-in-on-scroll store-info-item">
+          <h3 class="store-info-heading">📞 Contact</h3>
+          <p class="store-info-text">
             <strong>Phone:</strong><br>
-            <a href="tel:6153968088" style="color: #000000;">(615) 396-8088</a>
+            <a href="tel:6153968088" class="store-info-link">(615) 396-8088</a>
           </p>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000; margin-top: 1rem;">
+          <p class="store-info-text" style="margin-top: 1rem;">
             <strong>Email:</strong><br>
-            <a href="mailto:universityliquorandwine@gmail.com" style="color: #000000;">universityliquorandwine@gmail.com</a>
+            <a href="mailto:universityliquorandwine@gmail.com" class="store-info-link">universityliquorandwine@gmail.com</a>
           </p>
         </div>
         
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: #000000; margin-bottom: 1rem; font-family: var(--font-display);">🅿️ Parking</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: #000000;">
+        <div class="fade-in-on-scroll store-info-item">
+          <h3 class="store-info-heading">🅿️ Parking</h3>
+          <p class="store-info-text">
             Free parking is available for all customers. Conveniently located with easy access from Middle Tennessee Blvd.
           </p>
         </div>
@@ -208,7 +213,7 @@
         <h2 class="section-title">Find Us</h2>
       </div>
       
-      <div class="fade-in-on-scroll" style="max-width: 60%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg);">
+      <div class="fade-in-on-scroll map-container" style="max-width: 60%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg);">
         <iframe 
           src="https://www.google.com/maps?q=2834+Middle+Tennessee+Blvd,+Murfreesboro,+TN+37130&output=embed" 
           width="100%" 
@@ -224,7 +229,7 @@
   </section>
 
   <!-- Store Hours -->
-  <section class="section" style="background: var(--cream);">
+  <section class="section store-hours-section" style="background: var(--cream);">
     <div class="container">
       <div class="section-header fade-in-on-scroll">
         <div class="section-decoration"></div>
@@ -232,20 +237,20 @@
       </div>
       
       <div style="max-width: 600px; margin: 3rem auto 0;">
-        <div class="fade-in-on-scroll" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
-          <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--light-gray);">
-            <span style="font-weight: 600; color: var(--primary-navy);">Monday - Saturday</span>
-            <span style="color: var(--text-medium);">9:00 AM - 11:00 PM</span>
+        <div class="fade-in-on-scroll store-hours-container" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md);">
+          <div class="hours-row">
+            <span class="hours-day">Monday - Saturday</span>
+            <span class="hours-time">9:00 AM - 11:00 PM</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--light-gray);">
-            <span style="font-weight: 600; color: var(--primary-navy);">Sunday</span>
-            <span style="color: var(--text-medium);">10:00 AM - 11:00 PM</span>
+          <div class="hours-row">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-time">10:00 AM - 11:00 PM</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 1rem 0;">
-            <span style="font-weight: 600; color: var(--primary-navy);">Holidays</span>
-            <span style="color: var(--text-medium);">Hours May Vary</span>
+          <div class="hours-row hours-row-last">
+            <span class="hours-day">Holidays</span>
+            <span class="hours-time">Hours May Vary</span>
           </div>
-          <p style="margin-top: 1.5rem; color: var(--text-light); font-size: 0.9375rem; text-align: center;">
+          <p class="hours-note">
             Please call ahead during holidays to confirm hours
           </p>
         </div>

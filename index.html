@@ -153,7 +153,12 @@
       <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-          <a href="liquor-collections.html">Collections <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-header">
+            <a href="liquor-collections.html" class="dropdown-link">Collections</a>
+            <button class="dropdown-toggle" aria-label="Toggle Collections menu" type="button">
+              <span class="dropdown-arrow">▼</span>
+            </button>
+          </div>
           <ul class="dropdown-menu">
             <li><a href="spirit-shop-murfreesboro.html">Spirits</a></li>
             <li><a href="wine-shop-murfreesboro.html">Wine</a></li>
@@ -189,7 +194,6 @@
         <a href="tel:6153968088" class="btn-secondary">Call Us</a>
       </div>
     </div>
-    <div class="scroll-indicator">Scroll to Discover</div>
   </section>
 
   <!-- ============================================
@@ -384,42 +388,42 @@
   <!-- ============================================
        CONTACT INFORMATION
        ============================================ -->
-  <section class="section" style="background: var(--cream);">
+  <section class="section contact-info-section" style="background: var(--cream);">
     <div class="container">
       <div class="section-header fade-in-on-scroll">
         <div class="section-decoration"></div>
         <h2 class="section-title">Contact Information</h2>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">📍 Address</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+      <div class="contact-info-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+        <div class="fade-in-on-scroll contact-info-item">
+          <h3 class="contact-info-heading">📍 Address</h3>
+          <p class="contact-info-text">
             2834 Middle Tennessee Blvd<br>
             Murfreesboro, TN 37130
           </p>
-          <a href="contact.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Get Directions</a>
+          <a href="contact.html" class="btn-secondary contact-info-button">Get Directions</a>
         </div>
         
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">📞 Contact</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+        <div class="fade-in-on-scroll contact-info-item">
+          <h3 class="contact-info-heading">📞 Contact</h3>
+          <p class="contact-info-text">
             <strong>Phone:</strong><br>
-            <a href="tel:6153968088" style="color: var(--text-dark);">(615) 396-8088</a>
+            <a href="tel:6153968088" class="contact-info-link">(615) 396-8088</a>
           </p>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark); margin-top: 1rem;">
+          <p class="contact-info-text" style="margin-top: 1rem;">
             <strong>Email:</strong><br>
-            <a href="mailto:universityliquorandwine@gmail.com" style="color: var(--text-dark);">universityliquorandwine@gmail.com</a>
+            <a href="mailto:universityliquorandwine@gmail.com" class="contact-info-link">universityliquorandwine@gmail.com</a>
           </p>
         </div>
         
-        <div class="fade-in-on-scroll">
-          <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 1rem; font-family: var(--font-display);">🕐 Store Hours</h3>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark);">
+        <div class="fade-in-on-scroll contact-info-item">
+          <h3 class="contact-info-heading">🕐 Store Hours</h3>
+          <p class="contact-info-text">
             <strong>Monday - Saturday:</strong><br>
             9:00 AM - 11:00 PM
           </p>
-          <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-dark); margin-top: 1rem;">
+          <p class="contact-info-text" style="margin-top: 1rem;">
             <strong>Sunday:</strong><br>
             10:00 AM - 11:00 PM
           </p>
