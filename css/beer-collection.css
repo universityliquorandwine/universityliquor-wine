@@ -926,18 +926,17 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    box-sizing: border-box;
   }
   
-  /* Ensure phone number button matches wine page exactly - prevent text wrapping */
   .beer-hero .hero-cta .btn-secondary {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 8px !important;
-    white-space: nowrap !important; /* Prevent text from wrapping to multiple lines */
-    font-size: 0.8125rem !important; /* Slightly smaller font to fit on one line */
-    padding: 16px 16px !important; /* Reduced horizontal padding to fit text */
+    white-space: nowrap !important;
+    font-size: 0.8125rem !important;
+    padding: 16px 16px !important;
+    box-sizing: border-box !important;
   }
   
   .beer-hero .hero-cta .btn-secondary .phone-icon {

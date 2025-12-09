@@ -968,6 +968,22 @@
     text-align: center;
   }
   
+  .spirits-hero .hero-cta .btn-secondary {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    white-space: nowrap !important;
+    font-size: 0.8125rem !important;
+    padding: 16px 16px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .spirits-hero .hero-cta .btn-secondary .phone-icon {
+    font-size: 16px !important;
+    flex-shrink: 0;
+  }
+  
   .spirits-categories,
   .tennessee-whiskey,
   .cocktails-section,
